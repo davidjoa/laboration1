@@ -19,18 +19,26 @@
     <form action="http://webproduction.standout.se/form.php" method="POST">
         <fieldset>
             <legend>Fråga</legend>
-            <label>Ärendetyp</label>
-            <select name="Ärende">
-                <option>Beställning</option>
-                <option>Teknik</option>
-                <option>Faktura</option>
+            <label for="typ">Ärendetyp</label>
+            <select>
+                <option value="1">Beställning
+                <option value="2">Teknik
+                <option value="3">Faktura
             </select>
             <p></p>
-            <label>Rubrik</label>
-            <input "text" name="rubrik" />
+            <label for="rubrik">Rubrik</label>
+            <input type="text"/>
             <p></p>
             <label>Fråga</label>
-            <textarea name="Frågan" rows="2 cols" 30 "></textarea>
+            <textarea rows="2" cols="30 "></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Information om mig</legend>
+            <p>Önskad kontaktmetod</p>
+            <p><input type="checkbox" name="metod" value="telefon" checked="checked"/>Telefon
+            <input type="checkbox" namne="metod" value="mail"/>Mail</p>            
+        </fieldset>
+        <button type="submit">Skicka formulär</button> 
     </form>
 </body>
 
