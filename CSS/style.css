@@ -1,11 +1,18 @@
-h2,
-h3 {
-    color: teal;
-    font-weight: bold;
+#container {
+    width: 960px;
+    padding: 5px;
 }
 
-#content p {
-    color: white;
-    background-color: black;
+#content {
+    float: left;
+    width: 800px;
+    height: 700px;
+    padding: 5px;
 }
-#header p { color:red;}
+
+#header {
+    line-height: 30px;
+    height: 300px;
+    width: 150px;
+    float: left;
+}
