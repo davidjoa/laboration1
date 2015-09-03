@@ -1,0 +1,11 @@
+h2,
+h3 {
+    color: teal;
+    font-weight: bold;
+}
+
+#content p {
+    color: white;
+    background-color: black;
+}
+#header p { color:red;}
