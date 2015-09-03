@@ -7,39 +7,47 @@
 </head>
 
 <body>
-    <p>Joakims fenomenal sida</p>
-    <ul>
-        <li><a href="../index.html">Start</a></li>
-        <li><a href="laborationer.html">Laborationer</a></li>
-        <li><a href="presentation.html">Presentation</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
-    <p>Följande är ett fiktivt formulär</p>
-    <p></p>
-    <form action="http://webproduction.standout.se/form.php" method="POST">
-        <fieldset>
-            <legend>Fråga</legend>
-            <label for="typ">Ärendetyp</label>
-            <select>
-                <option value="1">Beställning
-                <option value="2">Teknik
-                <option value="3">Faktura
-            </select>
-            <p></p>
-            <label for="rubrik">Rubrik</label>
-            <input type="text"/>
-            <p></p>
-            <label>Fråga</label>
-            <textarea rows="2" cols="30 "></textarea>
-        </fieldset>
-        <fieldset>
-            <legend>Information om mig</legend>
-            <p>Önskad kontaktmetod</p>
-            <p><input type="checkbox" name="metod" value="telefon" checked="checked"/>Telefon
-            <input type="checkbox" namne="metod" value="mail"/>Mail</p>            
-        </fieldset>
-        <button type="submit">Skicka formulär</button> 
-    </form>
+    <div id="container">
+        <p>Joakims fenomenal sida</p>
+        <ul>
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="laborationer.html">Laborationer</a></li>
+            <li><a href="presentation.html">Presentation</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <p>Följande är ett fiktivt formulär</p>
+        <p></p>
+        <form action="http://webproduction.standout.se/form.php" method="POST">
+            <fieldset>
+                <legend>Fråga</legend>
+                <label>Ärendetyp
+                    <select name="errand" id="errand">
+                        <option value="Beställning">Beställning
+                            <option value="Teknik">Teknik
+                                <option value="Faktura">Faktura
+                    </select>
+                </label>
+                <p></p>
+                <label>Rubrik
+                    <input type="text" id="title" />
+                </label>
+                <p></p>
+                <label>Fråga
+                    <textarea rows="3" cols="30" id="question"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Information om mig</legend>
+                <p>Önskad kontaktmetod</p>
+                <label>
+                    <input type="checkbox" name="kontaktmetod" value="Telefon" checked="checked" />Telefon</label>
+                <label>
+                    <input type="checkbox" name="kontaktmetod" value="Mail" />Mail</label>
+            </fieldset>
+            <button type="submit">Skicka formulär</button>
+        </form>
+    </div>
 </body>
+
 
 </html>
