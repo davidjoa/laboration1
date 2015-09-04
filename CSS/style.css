@@ -3,32 +3,31 @@
 }
 
 #top {
-    border-styler: solid;
-    background-color: green;
+    margin: 10px;
+    border-style: solid;
     width: 960px;
     line-height: 30px;
 }
 
 #content {
+    margin: 10px;
     float: right;
     width: 700px;
     border-style: solid;
-    background-color: blue;
 }
 
 #header {
+    margin: 10px;
     line-height: 30px;
     height: 150px;
-    width: 150px;
+    width: 160px;
     float: left;
-    padding: 20px;
     border-style: solid;
-    background-color: gray;
 }
 
 #footer {
-    clear: both;
+    margin: 10px;
+    float: right;
     border-style: solid;
-    background-color: orange;
     width: 960px;
 }
