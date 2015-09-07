@@ -135,6 +135,8 @@ table {
 
 
 /*CSS manual*/
+
+
 /*
 Background container: #D9D3C7
 Background top: #EAE8DE
@@ -153,7 +155,7 @@ Background footer: #B8B8B6
     text-align: center;
     margin-right: -5px;
     float: right;
-    border-style: solid;
+    border: solid 1px black;
     width: 100%;
     line-height: 30px;
     background-color: #EAE8DE;
@@ -162,16 +164,26 @@ Background footer: #B8B8B6
 #content {
     margin-top: 10px;
     float: right;
-    width: 900px;
+    width: 85%;
     border-style: solid;
     background-color: #CDC8C1;
+}
+
+h2,
+#content {
+    font-size: 1.3em;
+}
+
+h3,
+#content {
+    font-size: 1.2em;
 }
 
 #navigation {
     margin-top: 10px;
     line-height: 30px;
     height: 150px;
-    width: 150px;
+    width: 10%;
     float: left;
     border-style: solid;
     background-color: #9E9A9C;
@@ -182,6 +194,10 @@ Background footer: #B8B8B6
     margin-top: 10px;
     float: right;
     border-style: solid;
+    height: 20px;
     width: 100%;
     background-color: #B8B8B6;
 }
+
+
+/*overall css*/
