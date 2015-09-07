@@ -1,9 +1,11 @@
 #container {
+    margin: auto;
     width: 960px;
 }
 
 #top {
     margin: 10px;
+    float: right;
     border-style: solid;
     width: 960px;
     line-height: 30px;
@@ -16,11 +18,11 @@
     border-style: solid;
 }
 
-#header {
+#navigation {
     margin: 10px;
     line-height: 30px;
     height: 150px;
-    width: 160px;
+    width: 150px;
     float: left;
     border-style: solid;
 }
