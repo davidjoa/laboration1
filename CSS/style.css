@@ -192,8 +192,15 @@ ul li a {
     display: block;
     list-style-type: none;
 }
-a:hover {color: #fff;}
-a:active {}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    font-weight: bold;
+    color: black;
+}
 
 #footer {
     margin-right: -5px;
