@@ -145,10 +145,12 @@ Background footer: #B8B8B6
 */
 
 #container {
+    font-family: "italic", "helvetica", "sans-serif";
     margin: auto;
-    width: 1200px;
+    width: 960px;
     background-color: #D9D3C7;
     overflow: auto;
+    line-height:120%
 }
 
 #top {
@@ -161,6 +163,11 @@ Background footer: #B8B8B6
     background-color: #EAE8DE;
 }
 
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 #content {
     margin-top: 10px;
     float: right;
@@ -169,45 +176,54 @@ Background footer: #B8B8B6
     background-color: #CDC8C1;
 }
 
-h2,
-#content {
-    font-size: 1.3em;
+#sign {
+    text-align: center;
 }
 
-h3,
-#content {
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h3 {
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 #navigation {
+    font-size: 1.3em;
     margin-top: 10px;
+    width: 13%;
     float: left;
-    border-style: solid;
     background-color: #9E9A9C;
-    padding: 5px;
+    padding: 3px;
 }
 
-ul li a {
+#navigation #list a {
     text-decoration: none;
     display: block;
     list-style-type: none;
+    border-radius: 5px;
+    border: 1px solid rgba(254, 254, 254, 1);
 }
 
-a:hover {
+#navigation a:hover {
     color: #fff;
 }
 
-a:active {
+#navigation a:active {
     font-weight: bold;
     color: black;
 }
 
 #footer {
+    text-align: center;
     margin-right: -5px;
     margin-top: 10px;
     float: right;
     border-style: solid;
-    height: 20px;
+    height: 30px;
     width: 100%;
     background-color: #B8B8B6;
 }
