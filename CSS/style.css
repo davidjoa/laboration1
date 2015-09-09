@@ -148,11 +148,11 @@ Background footer: #B8B8B6
 /*container*/
 
 #container {
-    font-family: "italic", "helvetica", "sans-serif";
+    font-family: "helvetica", "sans-serif";
     margin: auto;
     width: 960px;
     background-color: #D9D3C7;
-    overflow: auto;
+    overflow: hidden;
     line-height: 120%
 }
 
@@ -161,9 +161,8 @@ Background footer: #B8B8B6
 
 #top {
     text-align: center;
-    margin-right: -5px;
     float: right;
-    border: solid 1px black;
+    border-style: solid;
     width: 100%;
     line-height: 30px;
     background-color: #EAE8DE;
@@ -206,8 +205,9 @@ dl {
     list-style: none;
 }
 
-#sign {
+#contentfooter {
     text-align: center;
+    font-style: italic;
 }
 
 
@@ -244,7 +244,6 @@ dl {
 
 #footer {
     text-align: center;
-    margin-right: -5px;
     margin-top: 10px;
     float: right;
     border-style: solid;
