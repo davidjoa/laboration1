@@ -161,10 +161,10 @@ Background footer: #B8B8B6
     width: 100%;
     line-height: 30px;
     background-color: #EAE8DE;
-    background-image: url("../PICS/smile.svg");
-    background-position: 150px -20px;
+    background-image: url("../PICS/blackboard.jpg");
+    background-position: 170px 0px;
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: 100px;
 }
 
 h1 {
@@ -206,6 +206,18 @@ h3 {
     font-weight: bold;
     padding-bottom: 8px;
     padding-top: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-top: 15px;
+    background-image: url("../PICS/gear.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 5px 10px;
+    text-indent: 40px;
 }
 
 #navigation {
