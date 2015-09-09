@@ -161,6 +161,10 @@ Background footer: #B8B8B6
     width: 100%;
     line-height: 30px;
     background-color: #EAE8DE;
+    background-image: url("../PICS/smile.svg");
+    background-position: 150px -20px;
+    background-repeat: no-repeat;
+    background-size: 150px;
 }
 
 h1 {
