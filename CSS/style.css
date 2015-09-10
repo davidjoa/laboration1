@@ -213,11 +213,12 @@ dl {
 #bloggpic {
     float: right;
     border: 1px solid black;
-    margin-left: 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 #bloggpost p {
     white-space: normal;
+    margin-bottom: 10px;
 }
 
 
