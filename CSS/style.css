@@ -148,7 +148,7 @@ Background footer: #B8B8B6
 /*container*/
 
 #container {
-    font-family: "helvetica", "sans-serif";
+    font-family: "Arial", "Helvetica", "sans-serif";
     margin: auto;
     width: 960px;
     background-color: #D9D3C7;
@@ -208,6 +208,16 @@ dl {
 #contentfooter {
     text-align: center;
     font-style: italic;
+}
+
+#bloggpic {
+    float: right;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+#bloggpost p {
+    white-space: normal;
 }
 
 
