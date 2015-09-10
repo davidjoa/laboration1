@@ -152,7 +152,7 @@ Background footer: #B8B8B6
     margin: auto;
     width: 960px;
     background-color: #B8EFF1;
-    overflow: hidden;
+    overflow: auto;
     line-height: 120%
 }
 
@@ -210,10 +210,16 @@ dl {
     font-style: italic;
 }
 
+#bunnyjump {
+    float: right;
+    clear: right;
+}
+
 #bloggpic {
     float: right;
     border: 1px solid black;
     margin: 5px 5px 5px 5px;
+    clear: both;
 }
 
 #bloggpost p {
@@ -255,7 +261,7 @@ dl {
     margin-top: 10px;
     width: 13%;
     float: left;
-    background-color: #445758;
+    background-color: #48FFFB;
     padding: 3px;
 }
 
