@@ -221,6 +221,32 @@ dl {
     margin-bottom: 10px;
 }
 
+#labbar p {
+    margin: 0 0 5px 0;
+}
+
+#labbar dl {
+    margin: 5px 0 5px 0;
+}
+
+#form table tr td {
+    border: 1px solid black;
+    background-color: #9E9A9C;
+}
+
+#form caption {
+    font-weight: bold;
+    font-size: 1.1em
+}
+
+#form th {
+    font-weight: bold;
+}
+
+#labof {
+    font-style: italic;
+}
+
 
 /*navigation*/
 
