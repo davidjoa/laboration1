@@ -211,15 +211,15 @@ dl {
 }
 
 #bunnyjump {
-    float: right;
-    clear: right;
+    float: none;
+    margin: 5px 5px 5px 5px;
 }
 
 #bloggpic {
     float: right;
     border: 1px solid black;
     margin: 5px 5px 5px 5px;
-    clear: both;
+    clear: right;
 }
 
 #bloggpost p {
