@@ -178,7 +178,7 @@ Background footer: #B8B8B6
 #content {
     margin-top: 10px;
     float: right;
-    width: 85%;
+    width: 83%;
     border-style: solid;
     background-color: #63D3D8;
 }
@@ -259,18 +259,15 @@ dl {
 #navigation {
     font-size: 1.2em;
     margin-top: 10px;
-    width: 13%;
+    width: 15%;
     float: left;
     background-color: #48FFFB;
-    padding: 3px;
 }
 
-#navigation #list a {
+#navigation a {
     text-decoration: none;
     display: block;
     list-style-type: none;
-    border-radius: 3px;
-    border: 1px solid rgba(254, 254, 254, 1);
 }
 
 #navigation a:hover {
@@ -280,6 +277,50 @@ dl {
 #navigation a:active {
     font-weight: bold;
     color: black;
+}
+
+.menuicon {
+    width: 100%;
+    display: block;
+    background-image: url("../pics/sprite.png");
+    background-repeat: no-repeat;
+    float: left;
+    text-indent: 25px;
+    padding: 5px 0 5px 0;
+    border-radius: 6px;
+    border: 1px solid rgba(254, 254, 254, 1);
+}
+
+#start {
+    background-position: 0 -45px;
+}
+
+#start:hover {
+    background-position: 0 3px;
+}
+
+#lab {
+    background-position: 0 -143px;
+}
+
+#lab:hover {
+    background-position: 0 -95px;
+}
+
+#meinfo {
+    background-position: 0 -237px;
+}
+
+#meinfo:hover {
+    background-position: 0 -189px;
+    }
+
+#contact {
+    background-position: 0 -336px;
+}
+
+#contact:hover {
+    background-position: 0 -288px;
 }
 
 
