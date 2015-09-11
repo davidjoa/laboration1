@@ -166,7 +166,7 @@ Background footer: #B8B8B6
     width: 100%;
     line-height: 30px;
     background-color: #4CA1A5;
-    background-image: url("../PICS/blackboard.jpg");
+    background-image: url("../pics/blackboard.jpg");
     background-position: 170px 0px;
     background-repeat: no-repeat;
     background-size: 100px;
@@ -210,16 +210,16 @@ dl {
     font-style: italic;
 }
 
-#bunnyjump {
-    float: none;
-    margin: 5px 5px 5px 5px;
-}
-
-#bloggpic {
+.right {
     float: right;
     border: 1px solid black;
     margin: 5px 5px 5px 5px;
-    clear: right;
+}
+
+.left {
+    float: left;
+    border: 1px solid black;
+    margin: 5px 5px 5px 5px;
 }
 
 #bloggpost p {
@@ -323,7 +323,7 @@ h4 {
     font-weight: bold;
     padding-bottom: 8px;
     padding-top: 15px;
-    background-image: url("../PICS/gear.png");
+    background-image: url("../pics/gear.png");
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: 5px 10px;
