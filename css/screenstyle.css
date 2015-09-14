@@ -232,8 +232,11 @@ dl {
 
 #labbar dl {
     margin: 5px 0 5px 0;
+    word-wrap: break-word;
 }
-
+#form {
+    overflow:scroll;
+    }
 #form table tr td {
     border: 1px solid black;
     background-color: #62C4EF;
