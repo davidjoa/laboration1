@@ -150,7 +150,7 @@ Background footer: #B8B8B6
 #container {
     font-family: "Arial", "Helvetica", "sans-serif";
     margin: auto;
-    width: 480px;
+    width: 100%;
     background-color: #B8EFF1;
     overflow: auto;
     line-height: 120%
@@ -171,9 +171,9 @@ Background footer: #B8B8B6
 /*content*/
 
 #content {
-    margin: 20px 0 10px 0;
-    width: 83%;
-    float:left;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    float: left;
     border-style: solid;
     background-color: #63D3D8;
 }
@@ -222,6 +222,10 @@ dl {
     margin-bottom: 10px;
 }
 
+#bloggpic {
+    max-width: 30%;
+}
+
 #labbar p {
     margin: 0 0 5px 0;
 }
@@ -253,14 +257,15 @@ dl {
 
 #navigation {
     font-size: 1.2em;
-    width: 15%;
-    background-color: #48FFFB;
+    width: 30%;
+    
 }
 
 #navigation a {
     text-decoration: none;
     display: block;
     list-style-type: none;
+
 }
 
 #navigation a:hover {
@@ -282,6 +287,7 @@ dl {
     padding: 5px 0 5px 0;
     border-radius: 6px;
     border: 1px solid rgba(254, 254, 254, 1);
+    background-color: #48FFFB;
 }
 
 #start {
