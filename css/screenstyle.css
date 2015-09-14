@@ -152,7 +152,7 @@ Background footer: #B8B8B6
     margin: auto;
     width: 100%;
     background-color: #B8EFF1;
-    overflow: auto;
+    overflow: hidden;
     line-height: 120%
 }
 
@@ -257,15 +257,13 @@ dl {
 
 #navigation {
     font-size: 1.2em;
-    width: 30%;
-    
+    width: 100%;
 }
 
 #navigation a {
     text-decoration: none;
     display: block;
     list-style-type: none;
-
 }
 
 #navigation a:hover {
