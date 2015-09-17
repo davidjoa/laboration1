@@ -151,21 +151,25 @@ Background footer: #B8B8B6
     font-family: "Arial", "Helvetica", "sans-serif";
     margin: auto;
     width: 960px;
-    background-color: #B8EFF1;
+    background-color: #fff;
     overflow: auto;
     line-height: 120%;
+    background-image: url("pics/comb.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 
 /*top*/
 
 #top {
+    color: #fff;
     text-align: center;
     float: right;
     border-style: solid;
     width: 100%;
     line-height: 30px;
-    background-color: #4CA1A5;
+    background-color: #1C1919;
     background-image: url("pics/blackboard.jpg");
     background-position: 170px 0px;
     background-repeat: no-repeat;
@@ -180,7 +184,8 @@ Background footer: #B8B8B6
     float: right;
     width: 83%;
     border-style: solid;
-    background-color: #63D3D8;
+    background-color: #E0E0E0;
+    opacity: 0.9;
 }
 
 #content ul li {
@@ -261,7 +266,7 @@ tfoot {
     margin-top: 10px;
     width: 15%;
     float: left;
-    background-color: #48FFFB;
+    background-color: #536066;
 }
 
 #navigation a {
@@ -327,13 +332,14 @@ tfoot {
 /*footer*/
 
 #footer {
+    color: #fff;
     text-align: center;
     margin-top: 10px;
     float: right;
     border-style: solid;
     height: 30px;
     width: 100%;
-    background-color: #295658;
+    background-color: #1C1919;
 }
 
 
