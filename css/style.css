@@ -261,6 +261,16 @@ tfoot {
 
 /*navigation*/
 
+#meny {
+    color: #fff;
+    background-color: #536066;
+    float: left;
+    width: 15%;
+    font-size: 1.2em;
+    margin-top: 10px;
+   
+}
+
 #navigation {
     font-size: 1.2em;
     margin-top: 10px;

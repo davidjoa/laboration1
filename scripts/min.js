@@ -5,10 +5,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
- $("#dölj").click(function() {
-  $("p").hide();
+ $("button").click(function() {
+  $("p").toggle();
+  $("ul").toggle();
  });
- $("#visa").click(function() {
-  $("p").show();
- });
+});
+
+$(document).ready(function(){
+    $("#meny").click(function(){
+        $("#navigation").slideToggle("slow");
+    });
 });
