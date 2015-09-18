@@ -4,16 +4,21 @@ $(document).ready(function() {
  });
 });
 
-$(document).ready(function() {
- $("button").click(function() {
-  $("p").toggle();
-  $("ul").toggle();
- });
-});
+
 
 $(document).ready(function() {
  $("#meny").click(function() {
 
   $("#navigation").slideToggle("slow");
+ });
+});
+
+$(document).ready(function() {
+ $("button").click(function() {
+  $("#div1").fadeToggle("slow");
+  $("#div2").fadeToggle(3000);
+  $("#div3").fadeToggle(3000);
+
+
  });
 });
