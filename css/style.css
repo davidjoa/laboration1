@@ -180,12 +180,17 @@ Background footer: #B8B8B6
 /*content*/
 
 #content {
-    margin-top: 10px;
     float: right;
     width: 83%;
     border-style: solid;
     background-color: #E0E0E0;
     opacity: 0.9;
+}
+
+label,
+legend,
+button {
+    margin: 10px 0 10px 0;
 }
 
 #content ul li {
@@ -262,18 +267,20 @@ tfoot {
 /*navigation*/
 
 #meny {
+    text-align: center;
+    font-weight: bold;
     color: #fff;
     background-color: #536066;
-    float: left;
     width: 15%;
     font-size: 1.2em;
     margin-top: 10px;
-   
+    Display: block;
+    border-radius: 6px;
+    padding: 5px 0 5px 0;
 }
 
 #navigation {
     font-size: 1.2em;
-    margin-top: 10px;
     width: 15%;
     float: left;
     background-color: #536066;
