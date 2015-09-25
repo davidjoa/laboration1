@@ -180,6 +180,7 @@ Background footer: #B8B8B6
 /*content*/
 
 #content {
+    margin-top: -27px;
     float: right;
     width: 83%;
     border-style: solid;
@@ -267,13 +268,13 @@ tfoot {
 /*navigation*/
 
 #meny {
+    margin-top: 90px;
     text-align: center;
     font-weight: bold;
     color: #fff;
     background-color: #536066;
     width: 15%;
     font-size: 1.2em;
-    margin-top: 10px;
     Display: block;
     border-radius: 6px;
     padding: 5px 0 5px 0;
@@ -397,6 +398,22 @@ h4 {
 dd {
     text-indent: 2em;
 }
-#div1 {width:80px;height:80px;background-color:blue;}
-#div2  {width:80px;height:80px;background-color:red;}
-#div3 {width:80px;height:80px;background-color:yellow;}
+
+#div1 {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+}
+
+#div2 {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: relative;
+}
+
+#div3 {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+}
