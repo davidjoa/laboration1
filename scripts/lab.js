@@ -50,20 +50,36 @@ while (!correctAnswer) {
     }
 }*/
 
-/*do {
+do {
     var userChoice = prompt("0.Exit\n\n1.Fahrenheit to Celsius\n2.Celsius to Fahrenheit\n3.Guess number");
 
     switch (userChoice) {
-        case '1':
-            ("Fahrenheit To Celsius");
+        case "1":
+
+            if (userChoice === "1") {
+                var fahrenheit = prompt("Fahrenheit?");
+                var celsius = (fahrenheit - 32) * 5 / 9;
+                alert(fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius");
+            }
+
             break;
-        case '2':
-            ("Celsius To Fahrenheit");
+        case "2":
+
+            if (userChoice === "2") {
+                var celsius = prompt("Celsius?");
+                var fahrenheit = (celsius + 32) * 5 / 9;
+                alert(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit");
+
+            }
+
             break;
-        case '3':
-            ("Guess Number");
+        case "3":
+            
+
+
             break;
         default:
+
     }
-} while (userChoice !== "0")
-*/
+}
+while (userChoice !== "0")
