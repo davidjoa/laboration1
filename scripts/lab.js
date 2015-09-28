@@ -27,52 +27,43 @@ console.log(answer);*/ //Uppgift 2 moment 1, Eller denna?
 
 fras("Funkar", ",fint")*/ //Uppgift 2 moment 2
 
-/*var number =Math.floor(Math.random() * 100)
-var correctAnswer=false
-while(!correctAnswer)  
-{
+/*var number = Math.floor(Math.random() * 100)
+var count = 0;
+var correctAnswer = false
+while (!correctAnswer) {
     var guess = prompt("Guess what number i'm thinking off between 1 - 100");
-   
-    if (guess <number){
+
+    if (guess < number) {
         alert("Higher!");
-            }
-        
-    else if (guess >number){
-            alert("Lower!");
-            }
-            
-    else{
-                alert("Correct guess, lucky you!")
-                correctAnswer=true;
-                }}*/
+        count += 1;
+    }
 
-/*prompt("0.Exit\n\n1.Fahrenheit to Celsius\n2.Celsius to Fahrenheit\n3.Guess number"); // kör in en loop här också..
-var userChoice = true
-{
-    
-    if (userChoice === "0") {
-    alert("Bye bye");
-    userChoice=false
-}
-else {
-    prompt("0.Exit\n\n1.Fahrenheit to Celsius\n2.Celsius to Fahrenheit\n3.Guess number");
+    else if (guess > number) {
+        alert("Lower!");
+        count += 1;
+    }
 
-}
-}
-*/
+    else {
+        alert("Correct guess, lucky you! It took you " + count + " turns")
+        count += 1 
+        correctAnswer = true;
+    }
+}*/
+
 /*do {
-    userChoice = prompt(menuText);
-    switch(userChoice) {
-        case "1":
-            fahrenheitToCelsius();
+    var userChoice = prompt("0.Exit\n\n1.Fahrenheit to Celsius\n2.Celsius to Fahrenheit\n3.Guess number");
+
+    switch (userChoice) {
+        case '1':
+            ("Fahrenheit To Celsius");
             break;
-        case "2":
-            celsiusToFahrenheit();
+        case '2':
+            ("Celsius To Fahrenheit");
             break;
-        case "3":
-            playGuessNumber();
+        case '3':
+            ("Guess Number");
             break;
         default:
     }
-} while(userChoice !== "0")*/
-
+} while (userChoice !== "0")
+*/
