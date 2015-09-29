@@ -1,15 +1,22 @@
-var newString = "Jag tEsTaR lITe hÄr";
-var UpperToLowerLowerToUpper = function(){
-    
-    
-    }
+var newString = "Jag tEsTaR lITe hÄr bara";
 
+var UpperToLowerLowerToUpper = function(newString) {
+    var emptyStr = "";
+
+    for (var i = 0; i < newString.length; i++) {
+
+        if (newString[i] == newString[i].toLowerCase()) {
+            emptyStr += newString[i].toUpperCase();
+        }
+        else {
+            emptyStr += newString[i].toLowerCase();
+
+        }
+
+
+    }
+    return (emptyStr);
+}
 
 var res = newString.replace(/[aA]/g, "#");
-
-console.log(res)
-
-
-//.replace(/[aA]/g, "#");
-
-//+operator gör om siffra till sträng
+console.log(UpperToLowerLowerToUpper(res));
