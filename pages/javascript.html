@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Start</title>
-    <link rel="stylesheet" type="text/css" media="(min-width:481px)" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" media="(min-width:481px)" href="../css/jsstyle.css" />
     <link rel="stylesheet" media="screen and (max-width:480px)" href="../css/screenstyle.css" />
     <link rel="shortcut icon" href="../pics/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="../pics/touchicon.png" />
@@ -46,10 +46,44 @@
                  <dd><a href="uppgift9.html">Uppgift 9 – Tabellgenerering</a></dd>
                </dt> </dl>
             </div>
+
+            <h2>Fyll i din betalningsplan</h2>
+            <form id="myForm" method="POST">
+                <fieldset>
+                    <p>Förnamn</p>
+                    <label id="fn">
+                        <input id="fornamn" type=text name=namn></input>
+                    </label>
+                    <p>Efternamn</p>
+                    <label id="en">
+                        <input id="efternamn" type=text lastname=efternamn></input>
+                    </label>
+
+                    <p>Postnummer</p>
+                    <label id="pn">
+                        <input id="postnummer" type=text postal code=postnummer></input>
+                    </label>
+                    <p>E-post</p>
+                    <label id="ep">
+                        <input id="mejl" type=text email=e-post></input>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Prismodell</legend>
+                    <select name="price">
+                        <option value="low">Låg
+                            <option value="average">Medel
+                                <option value="high">Hög
+                    </select>
+                    <button type=submit>Genomför köp</button>
+                </fieldset>
+            </form>
             <div id="footer">
                 <p>Denna sida är skapad av Joakim</p>
             </div>
         </div>
+        <script type="text/javascript" src="../scripts/jquery.js"></script>
+        <script type="text/javascript" src="../scripts/validering.js"></script>
 </body>
 
 </html>
