@@ -7,7 +7,7 @@ $("#fornamn").blur(function(event) {
     if (!fornamnRegex.test(inputfornamn)) {
 
         $(function() {
-            $("#fornamn").css("background-color", "red");
+            $("#fornamn").css("background-color", "#FF0818");
             $('.felf').remove();
             $("#fn").append('<label class="felf">Det här fältet är obligatoriskt</label>');
 
@@ -16,7 +16,8 @@ $("#fornamn").blur(function(event) {
 
     else {
         $(function() {
-            $("#fornamn").css("background-color", "green");
+            $("#fornamn").css("background-color", "#62BF13");
+            $('.felf').remove();
         });
     }
 });
@@ -30,7 +31,7 @@ $("#efternamn").blur(function(event) {
     if (!efternamnnamnRegex.test(inputefternamn)) {
 
         $(function() {
-            $("#efternamn").css("background-color", "red");
+            $("#efternamn").css("background-color", "#FF0818");
             $('.fele').remove();
             $("#en").append('<label class="fele">Det här fältet är obligatoriskt</label>');
 
@@ -39,7 +40,8 @@ $("#efternamn").blur(function(event) {
 
     else {
         $(function() {
-            $("#efternamn").css("background-color", "green");
+            $("#efternamn").css("background-color", "#62BF13");
+            $('.fele').remove();
         });
     }
 });
@@ -48,16 +50,18 @@ $("#postnummer").blur(function(event) {
 
     var inputpostNumber = $("#postnummer").val();
 
-    var postnummerRegex = /^\d{5}$/;
+    var postNummerRegex = /^(SE)?(\s)?((\d){5}$|((\d){3}(\s|-)\d{2}))$/;
+
+    var postReturn = /^\d{5}$/;
 
 
 
 
-    if (!postnummerRegex.test(inputpostNumber)) {
+    if (!postNummerRegex.test(inputpostNumber)) {
 
 
         $(function() {
-            $("#postnummer").css("background-color", "red");
+            $("#postnummer").css("background-color", "#FF0818");
             $('.felp').remove();
             $("#pn").append('<label class="felp">Det här fältet är obligatoriskt</label>');
 
@@ -66,8 +70,14 @@ $("#postnummer").blur(function(event) {
 
 
     else {
+
+
         $(function() {
-            $("#postnummer").css("background-color", "green");
+
+            $("#postnummer").css("background-color", "#62BF13");
+            $('.felp').remove();
+
+
         });
     }
 });
@@ -82,7 +92,7 @@ $("#mejl").blur(function(event) {
     if (!mejlRegex.test(inputmejl)) {
 
         $(function() {
-            $("#mejl").css("background-color", "red");
+            $("#mejl").css("background-color", "#FF0818");
             $('.felm').remove();
             $("#ep").append('<label class="felm">Det här fältet är obligatoriskt</label>');
 
@@ -90,7 +100,8 @@ $("#mejl").blur(function(event) {
     }
     else {
         $(function() {
-            $("#mejl").css("background-color", "green");
+            $("#mejl").css("background-color", "#62BF13");
+            $('.felm').remove();
         });
 
     }
