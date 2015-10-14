@@ -52,34 +52,36 @@ $("#postnummer").blur(function(event) {
 
     var postNummerRegex = /^(SE)?(\s)?((\d){5}$|((\d){3}(\s|-)\d{2}))$/;
 
-    var postReturn = /^\d{5}$/;
-
-
+    var postReturn = inputpostNumber.match(postNummerRegex);
 
 
     if (!postNummerRegex.test(inputpostNumber)) {
-
 
         $(function() {
             $("#postnummer").css("background-color", "#FF0818");
             $('.felp').remove();
             $("#pn").append('<label class="felp">Det här fältet är obligatoriskt</label>');
 
+
         });
     }
+
 
 
     else {
 
 
         $(function() {
-
+console.log(inputpostNumber)
             $("#postnummer").css("background-color", "#62BF13");
             $('.felp').remove();
-
+            $("#postnummer").val(postReturn[3].replace(/(\s)|-/, ""));
 
         });
     }
+
+
+
 });
 
 

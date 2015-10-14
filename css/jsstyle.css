@@ -180,28 +180,52 @@ Background footer: #B8B8B6
 /*content*/
 
 #content {
-    margin: -27px 0 10px 0;
+    margin: 25px 0 10px 0;
     float: right;
     width: 83%;
     border-style: solid;
     background-color: #E0E0E0;
     opacity: 0.9;
-    padding: 0 0 10px 0;
+    padding: 0 0 10px 10px;
 }
+
+#betalningsplan {
+    border: solid black 1px;
+    width: 50%;
+    margin: 10px auto auto 20%;
+    vertical-align: central;
+    padding: 0 0 10px 10px;
+    background-color: #536066;
+    color: #FFF;
+    
+}
+
+#betalningsplan button {
+    width: 35%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#betalningsplan input {
+    width:40%;
+    
+    }
 
 label,
 legend,
 button text {
     margin: 10px 0 10px 0;
-    border-radius: 6px;
 }
-p {margin: 5px 0 5px 0;}
+
+p {
+    margin: 5px 0 5px 0;
+}
 
 button {
     text-align: center;
     font-weight: bold;
     color: #fff;
-    background-color: #536066;
+    background-color: #1C1919;
     width: 15%;
     font-size: 1.2em;
     Display: block;
@@ -256,10 +280,14 @@ dl {
 
 #labbar p {
     margin: 0 0 5px 0;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 #labbar dl {
     margin: 5px 0 5px 0;
+    font-weight: bold;
+   
 }
 
 table tr td {
@@ -301,6 +329,7 @@ tfoot {
     width: 15%;
     float: left;
     background-color: #536066;
+    margin-top: 25px;
 }
 
 #navigation a {

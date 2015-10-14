@@ -18,7 +18,7 @@
             <h1>Joakims fenomenala sida</h1>
             <p>Välkommen hit</p>
         </div>
-        <div id="meny">Meny</div>
+
         <div id="navigation">
             <ul>
                 <li id="start" class="menuicon"><a href="../index.html">Start</a></li>
@@ -33,54 +33,58 @@
 
 
                 <h2 id="lab2">Laboration 4</h2>
-                <dl>Redovisning</dl>
-                <dl>Uppgifter<dt>
-                 <dd><a href="uppgift1.html">Uppgift 1 – Hello World</a></dd>
-                 <dd><a href="uppgift2.html">Uppgift 2 – Funktioner</a></dd>
-                 <dd><a href="uppgift3.html">Uppgift 3 – Gissa talet</a></dd>
-                 <dd><a href="uppgift4.html">Uppgift 4 – Meny</a></dd>
-                 <dd><a href="uppgift5.html">Uppgift 5 – String</a></dd>
-                 <dd><a href="uppgift6.html">Uppgift 6 – Math</a></dd>
-                 <dd><a href="uppgift7.html">Uppgift 7 – Tentamarodören</a></dd>
-                 <dd><a href="uppgift8.html">Uppgift 8 – Födelsedag</a></dd>
-                 <dd><a href="uppgift9.html">Uppgift 9 – Tabellgenerering</a></dd>
-               </dt> </dl>
+                <p>Redovisning</p>
+                <dl>Uppgifter:
+                    <dl>
+                        <dd><a href="uppgift1.html">Uppgift 1 – Hello World</a></dd>
+                        <dd><a href="uppgift2.html">Uppgift 2 – Funktioner</a></dd>
+                        <dd><a href="uppgift3.html">Uppgift 3 – Gissa talet</a></dd>
+                        <dd><a href="uppgift4.html">Uppgift 4 – Meny</a></dd>
+                        <dd><a href="uppgift5.html">Uppgift 5 – String</a></dd>
+                        <dd><a href="uppgift6.html">Uppgift 6 – Math</a></dd>
+                        <dd><a href="uppgift7.html">Uppgift 7 – Tentamarodören</a></dd>
+                        <dd><a href="uppgift8.html">Uppgift 8 – Födelsedag</a></dd>
+                        <dd><a href="uppgift9.html">Uppgift 9 – Tabellgenerering</a></dd>
+                        </dt>
+                    </dl>
+            </div>
+            <div id="betalningsplan">
+                <h2>Fyll i din betalningsplan</h2>
+                <form id="myForm" method="POST">
+                    <fieldset>
+                        <p>Förnamn</p>
+                        <label id="fn">
+                            <input id="fornamn" type=text name=namn></input>
+                        </label>
+                        <p>Efternamn</p>
+                        <label id="en">
+                            <input id="efternamn" type=text lastname=efternamn></input>
+                        </label>
+
+                        <p>Postnummer</p>
+                        <label id="pn">
+                            <input id="postnummer" type=text postal code=postnummer></input>
+                        </label>
+                        <p>E-post</p>
+                        <label id="ep">
+                            <input id="mejl" type=text email=e-post></input>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Prismodell</legend>
+                        <select name="price">
+                            <option value="low">Låg
+                                <option value="average">Medel
+                                    <option value="high">Hög
+                        </select>
+                        <button type=submit>Genomför köp</button>
+                    </fieldset>
+                </form>
             </div>
 
-            <h2>Fyll i din betalningsplan</h2>
-            <form id="myForm" method="POST">
-                <fieldset>
-                    <p>Förnamn</p>
-                    <label id="fn">
-                        <input id="fornamn" type=text name=namn></input>
-                    </label>
-                    <p>Efternamn</p>
-                    <label id="en">
-                        <input id="efternamn" type=text lastname=efternamn></input>
-                    </label>
-
-                    <p>Postnummer</p>
-                    <label id="pn">
-                        <input id="postnummer" type=text postal code=postnummer></input>
-                    </label>
-                    <p>E-post</p>
-                    <label id="ep">
-                        <input id="mejl" type=text email=e-post></input>
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Prismodell</legend>
-                    <select name="price">
-                        <option value="low">Låg
-                            <option value="average">Medel
-                                <option value="high">Hög
-                    </select>
-                    <button type=submit>Genomför köp</button>
-                </fieldset>
-            </form>
-            <div id="footer">
-                <p>Denna sida är skapad av Joakim</p>
-            </div>
+        </div>
+        <div id="footer">
+            <p>Denna sida är skapad av Joakim</p>
         </div>
         <script type="text/javascript" src="../scripts/jquery.js"></script>
         <script type="text/javascript" src="../scripts/validering.js"></script>

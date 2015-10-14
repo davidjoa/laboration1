@@ -180,7 +180,7 @@ Background footer: #B8B8B6
 /*content*/
 
 #content {
-    margin-top: -27px;
+    margin: 25px 0 10px 0;
     float: right;
     width: 83%;
     border-style: solid;
@@ -285,6 +285,7 @@ tfoot {
     width: 15%;
     float: left;
     background-color: #536066;
+    margin-top: 25px;
 }
 
 #navigation a {
