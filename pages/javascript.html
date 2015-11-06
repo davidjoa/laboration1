@@ -33,6 +33,7 @@
 
 
                 <h2 id="lab2">Laboration 4</h2>
+
                 <p>Redovisning</p>
                 <dl>Uppgifter:
                     <dl>
@@ -48,44 +49,65 @@
                         </dt>
                     </dl>
             </div>
+
+
             <div id="betalningsplan">
                 <h2>Fyll i din betalningsplan</h2>
                 <form id="myForm" method="POST">
                     <fieldset>
-                        <p>Förnamn</p>
-                        <label id="fn">
+                        <p class="rubrik">Förnamn</p>
+                        <label  id="fn">
                             <input id="fornamn" type=text name=namn></input>
                         </label>
-                        <p>Efternamn</p>
+                        <p class="rubrik">Efternamn</p>
                         <label id="en">
-                            <input id="efternamn" type=text lastname=efternamn></input>
+                            <input id="efternamn" type=text name=efternamn></input>
                         </label>
 
-                        <p>Postnummer</p>
+                        <p class="rubrik">Postnummer</p>
                         <label id="pn">
                             <input id="postnummer" type=text postal code=postnummer></input>
                         </label>
-                        <p>E-post</p>
+                        <p class="rubrik">E-post</p>
                         <label id="ep">
                             <input id="mejl" type=text email=e-post></input>
                         </label>
                     </fieldset>
                     <fieldset>
-                        <legend>Prismodell</legend>
+                        <legend class="rubrik">Prismodell</legend>
                         <select name="price">
                             <option value="low">Låg
                                 <option value="average">Medel
                                     <option value="high">Hög
                         </select>
-                        <button type=submit>Genomför köp</button>
+                        <button type="button" name=knapp id="genomf">Genomför köp</button>
                     </fieldset>
                 </form>
             </div>
 
+
+            <div id="hiddenOverlay">
+
+                <div id="popup">
+                    <h2>Kontrollera uppgifterna</h2>
+                    <ul id="confirmlist">
+
+                    </ul>
+                    <button type="button" id="cancel">Avbryt</button>
+                    <button  id="stila" form="betalningsplan">Bekräfta</button>
+
+                </div>
+
+
+            </div>
+
         </div>
+
+
         <div id="footer">
             <p>Denna sida är skapad av Joakim</p>
         </div>
+
         <script type="text/javascript" src="../scripts/jquery.js"></script>
         <script type="text/javascript" src="../scripts/validering.js"></script>
 </body>
