@@ -146,70 +146,95 @@ $(document).ready(function() {
                 event.preventDefault();
 
             });*/
-
     $('#genomf').click(function(event) {
-
-
-
-
-
-        //  event.preventDefault();
-        //If this method is called, the default action of the event will not be triggered
-
-        // kanske ska användas till If-satsens händelse sen...
-
-
         var $inputs = $('#myForm :input');
-        // get the array of all the inputs 
+        var invalid = false;
+        $inputs.each(function() {
 
-        var classInputs = $('.rubrik');
-        // get an associative array of the values
-
-        var values = {};
-
-        $inputs.each(function(index)
-        //generic iterator function, which can be used to seamlessly iterate over both objects and arrays
-        {
-            values[this.name] = $(this).val();
-            
-            // Vad säger [this.name] egentligen? Vad styr det?
-
-
-            $('#hiddenOverlay').attr('id', 'overlayBack');
-            //switch ID to cover background
-            
-            $("#hiddenOverlay").css("visibility", "visible");
-            //appear hiddenOverlay to get through popup
-
-            $('#confirmlist').append('<span>' + '<p>' + classInputs.eq(index).text() + '</p>' + '</span>');
-            $('#confirmlist').append('<p>' + $(this).val() + '</p>');
-
+            if ($(this).hasClass("invalid")) {
+                invalid = true;
+            }
         });
 
-        $('#stila').click(function() {
-            $('#myForm').submit();
-
-        });
-        $('#stila').click(function() {
+        if (invalid) {
 
 
-            $('#overlayBack').attr('id', 'hiddenOverlay');
-            $("#hiddenOverlay").css("visibility", "hidden");
-
-        });
-        $('#cancel').click(function() {
-
-
-            $('#overlayBack').attr('id', 'hiddenOverlay');
-            $("#overlayBack").css("visibility", "hidden");
-            $('#confirmlist').empty(); 
-            //clear form inputs so only one uniqe set will be sent
-        });
+            event.preventDefault();
+        }
+        else {
 
 
 
 
 
+
+
+            //  event.preventDefault();
+            //If this method is called, the default action of the event will not be triggered
+
+            // kanske ska användas till If-satsens händelse sen...
+
+
+
+
+
+
+            var $inputs = $('#myForm :input');
+            // get the array of all the inputs 
+
+            var classInputs = $('.rubrik');
+            // get an associative array of the values
+
+            var values = {};
+
+
+
+            $inputs.each(function(index)
+                //.each, generic iterator function, which can be used to seamlessly iterate over both objects and arrays
+                {
+                    values[this.name] = $(this).val();
+
+                    // Vad säger [this.name] egentligen? Vad styr det?
+
+
+                    $('#hiddenOverlay').attr('id', 'overlayBack');
+                    //switch ID to cover background
+
+                    $("#hiddenOverlay").css("visibility", "visible");
+                    //appear hiddenOverlay to get through popup
+
+                    $('#confirmlist').append('<span>' + '<p>' + classInputs.eq(index).text() + '</p>' + '</span>');
+                    $('#confirmlist').append('<p>' + $(this).val() + '</p>');
+
+                });
+
+            $('#stila').click(function() {
+                $('#myForm').submit();
+
+            });
+            $('#stila').click(function() {
+
+
+                $('#overlayBack').attr('id', 'hiddenOverlay');
+                $("#hiddenOverlay").css("visibility", "hidden");
+
+            });
+            $('#cancel').click(function() {
+
+
+                $('#overlayBack').attr('id', 'hiddenOverlay');
+                $("#overlayBack").css("visibility", "hidden");
+                $('#confirmlist').empty();
+                //clear form inputs so only one uniqe set will be sent
+            });
+
+
+
+
+
+
+
+        }
 
     });
 });
