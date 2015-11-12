@@ -11,4 +11,4 @@ var fras = function(text1, text2) {
     console.log(text1 + text2);
 };
 
-fras("Funkar", ",bra")
+fras("Funkar", ",bra");

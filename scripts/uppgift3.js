@@ -1,6 +1,6 @@
-var number = Math.floor(Math.random() * 100) 
+var number = Math.floor(Math.random() * 100); 
 var count = 0;
-var correctAnswer = false
+var correctAnswer = false;
 while (!correctAnswer) {
     var guess = prompt("Guess what number i'm thinking off between 1 - 100");
 
@@ -15,8 +15,8 @@ while (!correctAnswer) {
     }
 
     else {
-        alert("Correct guess, lucky you! It took you " + count + " turns")
-        count += 1 
+        alert("Correct guess, lucky you! It took you " + count + " turns");
+        count += 1 ;
         correctAnswer = true;
     }
 }

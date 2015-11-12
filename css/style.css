@@ -263,7 +263,28 @@ th {
 tfoot {
     font-style: italic;
 }
+#calc input {
+    width:39.5%;
+    background-color: #62C4EF;
+    border: 1px solid black;
+    font-size: 2em;
+    }
 
+#calc table td {
+    
+    font-size: 2em;
+    white-space:nowrap;
+    text-align:center;
+    padding-top:15px;
+    
+    
+    }
+#calc table {
+    width:40%;
+    height:200px;
+    
+
+    }
 
 /*navigation*/
 
